@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <p>Hello world <b>hi</b></p>
+    <input type="text"  id="input"/>
+    <button id="buttonHide">Hide</button>
+  </body>
+  <script>
+//Get
+        //1)text      -only the text value
+
+    // $(document).ready(function () {
+    // $("#buttonHide").click(function () {
+    //     console.log($("p").text())
+
+    //   });
+    // });
+
+    //2)HTML      -all the html
+
+    // $(document).ready(function () {
+    //     $("#buttonHide").click(function () {
+    //     console.log($("p").html())
+
+    //   });
+    // });
+
+    //3)val       -only the input value
+
+
+    // $(document).ready(function () {
+    //     $("#buttonHide").click(function () {
+    //     console.log($("#input").val())
+
+    //   });
+    // });
+
+
+//set
+    //1)text      -only the text value
+
+    // $(document).ready(function () {
+    //     $("#buttonHide").click(function () {
+    //     console.log($("p").text('indhuja'))
+
+    //   });
+    // });
+
+    //2)HTML      -all the html
+
+    // $(document).ready(function () {
+    //     $("#buttonHide").click(function () {
+    //     console.log($("p").html('<h1>Indhuja</h1>'))
+
+    //   });
+    // });
+
+     //3)val       -only the input value
+
+    //  $(document).ready(function () {
+    //     $("#buttonHide").click(function () {
+    //     console.log($("#input").val('indhuja'))
+
+    //   });
+    // });
+
+    //add
+        //1)append  -add element at the end
+    //     $(document).ready(function () {
+    //     $("#buttonHide").click(function () {
+    //      console.log($("p").append('indhuja'))
+
+    //    });
+    //  });
+
+        //2)prepend -add element at the start
+    //     $(document).ready(function () {
+    //     $("#buttonHide").click(function () {
+    //      console.log($("p").prepend('indhuja'))
+
+    //    });
+    //  });
+
+    //remove
+
+    $(document).ready(function () {
+        $("#buttonHide").click(function () {
+         console.log($("p").remove())
+
+       });
+     });
+    //addclass
+    $(document).ready(function () {
+        $("#buttonHide").click(function () {
+         console.log($("p").addClass('indhuja'))
+
+       });
+     });
+  </script>
+</html>
