@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <p>[1,2,3,4,5,6,8,12]</p>
+    <button id="buttonHide">Hide</button>
+    <p id="even"></p>
+
+    <script>
+        $(document).ready(function(){
+            $("#buttonHide").click(function(){
+                let values = JSON.parse($("p").text()); // Parse the string to get an array
+                let evenNum = [];
+
+                for(let i = 0; i < values.length; i++){
+                    if(Number(values[i]) % 2 === 0){
+                        evenNum.push(values[i]);
+                    }
+                }
+
+                $("#even").text(evenNum);
+            });
+        });
+    </script>
+</body>
+</html>
